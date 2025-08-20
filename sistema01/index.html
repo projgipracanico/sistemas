@@ -89,6 +89,11 @@
         cursor: pointer;
       }
 
+      .botao-carrinho:hover {
+        background-color: bisque;
+
+      }
+
       .img-logo{
     
         border-radius: 4px;
@@ -99,6 +104,97 @@
         justify-content: center;
         align-items: center;
       }
+
+
+      #btn-carrinho {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color:#470404;
+        border: none;
+        color:aqua;
+        padding: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        font-size: 20px;
+        z-index: 1001;
+
+      }
+
+      #btn-carrinho:hover {
+        background-color: #470404;
+      }
+
+      #contador-quantidade {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        background: #470404;
+        color: aqua;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 50%;
+        display: none;
+        font-weight: bold;
+
+      }
+
+      #carrinho-lateral {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 350px;
+        height: 100%;
+        background-color: bisque;
+        box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        box-sizing: border-box;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        background-color: bisque;
+      }
+
+      #carrinho-lateral-aberto {
+        right: 0;
+      }
+
+      #carrinho-lateral h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: aqua;
+      }
+
+      #itens-carrinho {
+        flex: 1;
+        overflow-y: auto;
+        margin-bottom: 15px;
+      }
+
+      .item-carrinho {
+        display: flexbox;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-right: 10px;
+      }
+
+      .item-carrinho img {
+        width: 70px;
+        height: 70px;
+
+        object-fit: contain;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+
+      .item-carrinho-info {
+        flex: 1;
+      }
+
+      
+      
 
 
 
@@ -113,6 +209,24 @@
 
     <h1>BEM-VINDA(O), A LOJINHA DA GI!</h1>
     <H2>Catálogo de Produtos</H2>
+
+    <button id="btn-carrinho" aria-label="Abrir Carrinho">
+      🛒
+
+      <span id="contador-quantidade">0</span>
+
+    </button>
+
+    <aside id="carrinho-lateral" aria-label="Carrinho de Compras">
+      <h2>Seu Carrinho</h2>
+      <div id="itens-carrinho"></div>
+      <div id="total-carrinho">Total: R$ 0,00</div>
+      <button id="btn-finalizar">Finalizar Compra</button>
+
+    </aside>
+
+
+
 
     <div class="produtos-container">
       <div class="produto">
@@ -200,12 +314,9 @@
       </div>
 
 
-
-
-
-
-
     </div>
+
+
     
 </body>
 </html>
