@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LojinhaDaGi</title>
+
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: beige;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: rgb(91, 15, 15);
+      }
+
+      h2{
+        text-align: center;
+        margin-bottom: 40px;
+        color: brown;
+
+      }
+
+      .produtos-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .produto {
+        background-color: brown;
+        border: 1px solid #470404;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform0.2s;
+
+      }
+
+      .produto:hover {
+        transform: scale(1.02);
+      }
+
+      .imagem-produto {
+        width: 100%;
+        height: 150px;
+        background-color: #470404;
+        border-radius: 4px;
+        margin-bottom: 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .imagem-produto img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .descricao {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: azure;
+      }
+
+      .preco {
+        font-weight: bold;
+        color: rgb(7, 177, 177);
+        margin-bottom: 15px;
+      }
+
+      .botao-carrinho {
+        background-color: bisque;
+        color: rgb(1, 203, 203);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .img-logo{
+    
+        border-radius: 4px;
+        margin-bottom: 15px;
+        margin-left: 27%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<img src="img/logo-removebg-preview.png"  class="img-logo">
+
+    <h1>BEM-VINDA(O), A LOJINHA DA GI!</h1>
+    <H2>Catálogo de Produtos</H2>
+
+    <div class="produtos-container">
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/brincoscereja.jpg" ></div>
+        <div class="descricao">Produto 1 - Brincos em formato de cereja</div>
+        <div class="preco">R$ 27,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/bolsa.jpg" ></div>
+        <div class="descricao">Produto 2 - Bolsa da Miu Miu </div>
+        <div class="preco">R$ 69,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/boneroxo.jpg" ></div>
+        <div class="descricao">Produto 3 - Boné lilás</div>
+        <div class="preco">R$ 21,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/bota.jpg" ></div>
+        <div class="descricao">Produto 4 - Bota cano longo</div>
+        <div class="preco">R$ 78,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/bracelete.jpg" ></div>
+        <div class="descricao">Produto 5 - Braceletes douardos</div>
+        <div class="preco">R$ 19,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/cachecolvermelho.jpg" ></div>
+        <div class="descricao">Produto 6 - Cachecol Vermelho</div>
+        <div class="preco">R$ 20,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/camisa.jpg" ></div>
+        <div class="descricao">Produto 7 - Camisa Branca</div>
+        <div class="preco">R$ 35,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/jaqueta.jpg" ></div>
+        <div class="descricao">Produto 8 - Jaqueta</div>
+        <div class="preco">R$ 79,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/lenço.jpg" ></div>
+        <div class="descricao">Produto 9 - Lenço de Cabelo </div>
+        <div class="preco">R$ 17,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/oculosmiu.jpg" ></div>
+        <div class="descricao">Produto 10 - Óculos Miu Miu</div>
+        <div class="preco">R$ 19,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/saia.jpg" ></div>
+        <div class="descricao">Produto 11 - Saia de cetim</div>
+        <div class="preco">R$ 36,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <div class="imagem-produto"><img src="img/scarpin.jpg" ></div>
+        <div class="descricao">Produto 12- Scarpin Vermelho</div>
+        <div class="preco">R$ 45,99</div>
+        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+      </div>
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
